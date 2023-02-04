@@ -22,5 +22,8 @@ jobs:
           cache: 'yarn'
           always-auth: true
 
+      - name: Install dependencies
+        run: yarn install --ignore-scripts --ignore-engines --pure-lockfile
+
       - name: Deploy site
         run: yarn deploy
