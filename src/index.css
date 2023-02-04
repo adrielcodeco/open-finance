@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code|Syne+Mono&display=swap');
+
+:root {
+  --global-font-size: 15px;
+  --global-line-height: 1.4em;
+  --global-space: 10px;
+  --font-stack: Fira Code, Menlo, Monaco, Lucida Console, Liberation Mono, Syne Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  --mono-font-stack: Fira Code, Menlo, Monaco, Lucida Console, Liberation Mono, Syne Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  --background-color: #222225;
+  --page-width: 60em;
+  --font-color: #e8e9ed;
+  --invert-font-color: #222225;
+  --secondary-color: #a3abba;
+  --tertiary-color: #a3abba;
+  --primary-color: #62c4ff;
+  --error-color: #ff3c74;
+  --progress-bar-background: #3f3f44;
+  --progress-bar-fill: #62c4ff;
+  --code-bg-color: #3f3f44;
+  --input-style: solid;
+  --display-h1-decoration: none;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.choice {
+  list-style-type: circle !important;
+  list-style-position: inside;
+  padding-left: 2rem;
+}
+
+pre {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: var(--code-bg-color);
+}
+
+pre > code {
+  padding: 1rem;
+}
+
+.list-plus {
+  list-style-type: none;
+}
+
+.list-plus > li::after {
+  content: '+';
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.margin-0_5 {
+  margin: 0.5rem;
+}
+
+.pad-left {
+  margin-left: 1.5rem;
+}
+
+.margin-1 {
+  margin: 0.5rem;
+}
+
+.margin-c1 * {
+  margin: 0.5rem;
+}

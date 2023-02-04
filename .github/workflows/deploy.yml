@@ -1,0 +1,26 @@
+name: GitHub Pages Deploy
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@master
+        with:
+          node-version: 'lts/*'
+          check-latest: trues
+          cache: 'yarn'
+          always-auth: true
+
+      - name: Deploy site
+        run: yarn deploy
