@@ -1,0 +1,125 @@
+<svg viewBox="0 0 180 16" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        :root {
+            --global-font-size: 15px;
+            --global-line-height: 1.4em;
+            --global-space: 10px;
+            --font-stack: Fira Code, Menlo, Monaco, Lucida Console, Liberation Mono, Syne Mono,
+                DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+            --mono-font-stack: Fira Code, Menlo, Monaco, Lucida Console, Liberation Mono, Syne Mono,
+                DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+            --background-color: #222225;
+            --page-width: 60em;
+            --font-color: #e8e9ed;
+            --invert-font-color: #222225;
+            --secondary-color: #a3abba;
+            --tertiary-color: #a3abba;
+            --primary-color: #62c4ff;
+            --error-color: #ff3c74;
+            --progress-bar-background: #3f3f44;
+            --progress-bar-fill: #62c4ff;
+            --code-bg-color: #3f3f44;
+            --input-style: solid;
+            --display-h1-decoration: none;
+        }
+
+        a {
+            cursor: pointer;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: var(--primary-color);
+            color: var(--invert-font-color);
+        }
+
+        blockquote,
+        code,
+        footer,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        header,
+        li,
+        ol,
+        p,
+        section,
+        ul,
+        .logo {
+            float: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .terminal-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: var(--background-color);
+            height: 16px;
+            padding-left: 0.9rem;
+        }
+
+        .terminal-prompt {
+            position: relative;
+            white-space: nowrap;
+        }
+
+        .terminal-prompt::before {
+            content: "> ";
+        }
+
+        .terminal-prompt::after {
+            content: "";
+            animation: cursor 800ms infinite;
+            background: var(--primary-color);
+            border-radius: 0;
+            display: inline-block;
+            height: 1em;
+            margin-left: 0.2em;
+            width: 3px;
+            bottom: -2px;
+            position: relative;
+        }
+
+        @-webkit-keyframes cursor {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+        @keyframes cursor {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+    </style>
+    <foreignObject x="0" y="0" width="180" height="16">
+        <header class="terminal-nav" xmlns="http://www.w3.org/1999/xhtml">
+            <div class="terminal-logo">
+                <div class="logo terminal-prompt"><a href="https://adrielcodeco.github.io/open-finance/"
+                        class="no-style">Open Finance Guild</a></div>
+            </div>
+        </header>
+    </foreignObject>
+</svg>

@@ -1,4 +1,9 @@
-<svg x="0px" y="0px" width="100%" height="50" viewBox="0 0 100 30" xmlns="http://www.w3.org/2000/svg"> <style>:root{--global-font-size: 15px; --global-line-height: 1.4em; --global-space: 10px; --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif; --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif; --background-color: #fff; --page-width: 60em; --font-color: #151515; --invert-font-color: #fff; --primary-color: #1a95e0; --secondary-color: #727578; --error-color: #d20962; --progress-bar-background: #727578; --progress-bar-fill: #151515; --code-bg-color: #e8eff2; --input-style: solid; --display-h1-decoration: none;}a{cursor: pointer; color: var(--primary-color); text-decoration: none;}a:hover{background-color: var(--primary-color); color: var(--invert-font-color);}blockquote,code,footer,h1,h2,h3,h4,h5,h6,header,li,ol,p,section,ul,.logo{float: none; margin: 0; padding: 0;}.terminal-nav{display: flex; flex-direction: column; align-items: flex-start;}.terminal-prompt{position: relative; white-space: nowrap;}.terminal-prompt::before{content: "> ";}.terminal-prompt::after{content: ""; animation: cursor 800ms infinite; background: var(--primary-color); border-radius: 0; display: inline-block; height: 1em; margin-left: 0.2em; width: 3px; bottom: -2px; position: relative;}@-webkit-keyframes cursor{0%{opacity: 0;}50%{opacity: 1;}to{opacity: 0;}}@keyframes cursor{0%{opacity: 0;}50%{opacity: 1;}to{opacity: 0;}}</style> <foreignObject x="0" y="0" width="300" height="50"> <header class="terminal-nav" xmlns="http://www.w3.org/1999/xhtml"><div class="terminal-logo"><div class="logo terminal-prompt"><a href="https://adrielcodeco.github.io/open-finance/" class="no-style">Open Finance Guild</a></div></div></header> </foreignObject></svg>
+<p align="center">
+  <picture>
+    <img alt="https://adrielcodeco.github.io/open-finance" src="logo.png" width="480">
+    <source srcset="logo.svg">
+  </picture>
+</p>
 
 This is the repo for Open Finance Guild site source code.
 
