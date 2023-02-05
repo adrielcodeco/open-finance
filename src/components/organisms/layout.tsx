@@ -4,6 +4,7 @@ import Container from '@mui/material/Container'
 import * as styles from './layout.css'
 import { TerminalcssLink } from '../atoms/terminalcssLink'
 import { BadgeGithub } from '../atoms/badgeGithub'
+import { ScrollToTop } from '../atoms/scrollToTop'
 
 type LayoutProps = {
   children: React.ReactNode
@@ -26,6 +27,7 @@ export const Layout = (props: LayoutProps) => {
         </header>
         {children}
         {repo ? <BadgeGithub repo={repo} /> : null}
+        <ScrollToTop />
       </Container>
       <footer css={styles.footer}>
         <div css={styles.copyright}>

@@ -1,4 +1,6 @@
+/* eslint-disable no-restricted-globals */
 /** @jsxImportSource @emotion/react */
+import { useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { HomePage } from 'src/pages/home'
 import { OBInformPage } from 'src/pages/ob-inform'
@@ -7,6 +9,11 @@ import { OpenidCertPage } from 'src/pages/openid-cert'
 type AppProps = {}
 
 export const App = (props: AppProps) => {
+  useEffect(() => {
+    if (location.hash) {
+      location.href = location.hash
+    }
+  })
   return (
     <Routes>
       <Route path="/open-banking/informes" element={<OBInformPage />} />
